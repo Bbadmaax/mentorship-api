@@ -64,7 +64,7 @@ app.use(globalHandler)
 
 mongoose.connect(process.env.NODE_ENV == 'development' ? process.env.MONGO_URL_DEV : process.env.MONGO_URL_PRO)
 .then(()=> console.log('connected mongoose ✅'))
-.catch(()=> console.log("not connected ❌"))
+.catch(()=> console.log("not connected mongoose ❌"))
 
 app.listen(PORT, ()=> {
     console.log(`SERVER IS RUNNING http://localhost:${PORT}`)
