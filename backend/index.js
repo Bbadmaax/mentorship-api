@@ -3,6 +3,7 @@ import dotenv from "dotenv"
 import mongoose from "mongoose";
 import morgan from "morgan"
 import helmet from "helmet";
+import cors from 'cors'
 
 
 // import routes 
@@ -31,6 +32,7 @@ const PORT =process.env.PORT || 5000
 //  custom middleware
 app.use(logger)
 app.use(morgan('dev'))
+app.use(cors())
 
 
 

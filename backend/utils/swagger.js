@@ -35,6 +35,7 @@ const options = {
 
   // ✔️ FIXED ONLY THIS LINE
   apis: [path.join(__dirname, "../routes/*.js")],
+ 
 };
 
 export const swaggerSpec = swaggerJSDoc(options);
